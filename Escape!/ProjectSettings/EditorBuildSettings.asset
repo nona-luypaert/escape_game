@@ -29,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Castle/Castle_5.unity
     guid: 174dd77504995c44b8d45a86412132d1
+  - enabled: 1
+    path: Assets/Scenes/Castle/Castle_6.unity
+    guid: afde6e6dc117be9439294adee19b2418
+  - enabled: 1
+    path: Assets/Scenes/Castle/Castle_6_mirror.unity
+    guid: 0610dcbd73d1d6a4ab1a38d6169b0bc1
+  - enabled: 1
+    path: Assets/Scenes/Castle/Castle_7.unity
+    guid: 7bf77288c317b124c8ea3be06782245c
   m_configObjects: {}
