@@ -38,4 +38,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Castle/Castle_7.unity
     guid: 7bf77288c317b124c8ea3be06782245c
+  - enabled: 1
+    path: Assets/Scenes/School/School_2.unity
+    guid: 5cfc32432b2613a4caf2e6f2c881c075
+  - enabled: 1
+    path: Assets/Scenes/School/School_2_code.unity
+    guid: 696c24805779aca40a87b56d6a708ca5
+  - enabled: 1
+    path: Assets/Scenes/School/School_2_done.unity
+    guid: f6e9bcd956439874cb1de496b9190923
+  - enabled: 1
+    path: Assets/Scenes/School/School_3.unity
+    guid: f8e372e096b46be468aad2ca4e9d1900
   m_configObjects: {}
