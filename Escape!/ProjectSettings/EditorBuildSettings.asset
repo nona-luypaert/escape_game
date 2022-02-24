@@ -53,4 +53,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/School/School_3_desk.unity
     guid: 639969cdb6a155d45bd7c47d14e01a17
+  - enabled: 1
+    path: Assets/Scenes/School/School_4.unity
+    guid: a42e30ba142e4bd4b85c8e8119642912
+  - enabled: 1
+    path: Assets/Scenes/School/School_4_note.unity
+    guid: 2e03a54cb8b57974c8c7d80a4916398f
   m_configObjects: {}
