@@ -15,10 +15,10 @@ public class ScoreboardController : MonoBehaviour
     {
         button = GameObject.Find("Button_next");
         button.SetActive(false);
-        numberString_1 = "";
-        numberString_2 = "";
-        numberString_3 = "";
-        numberString_4 = "";
+        numberString_1 = "0";
+        numberString_2 = "0";
+        numberString_3 = "0";
+        numberString_4 = "0";
         button_note = GameObject.Find("Button_note").GetComponent<Button>();
         button_1 = GameObject.Find("Button_1").GetComponent<Button>();
         button_2 = GameObject.Find("Button_2").GetComponent<Button>();
