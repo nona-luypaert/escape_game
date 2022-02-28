@@ -46,7 +46,7 @@ public class Key6Controller : MonoBehaviour
             keyReleased = true;
             keyCollider.enabled = true;
         }
-        if (transform.position.y <= -4f)
+        if (transform.position.y <= -3.5f)
         {
             Destroy(rigidBody);
         }
