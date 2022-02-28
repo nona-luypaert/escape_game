@@ -6,7 +6,7 @@ public class Key5Controller : MonoBehaviour
 {
     private Touch touch;
     private Vector2 touchPosition;
-    private BoxCollider2D keyCollider, lockCollider, flagCollider;
+    private BoxCollider2D keyCollider, lockCollider;
     private float deltaX, deltaY;
     private bool moveAllowed;
     private GameObject key, lockOpen, lockClosed, button;
@@ -14,7 +14,6 @@ public class Key5Controller : MonoBehaviour
     void Start()
     {
         moveAllowed = false;
-        flagCollider = GameObject.Find("school_flag").GetComponent<BoxCollider2D>();
         key = GameObject.Find("school_5_key");
         keyCollider = key.GetComponent<BoxCollider2D>();
         button = GameObject.Find("Button_next");
@@ -61,7 +60,6 @@ public class Key5Controller : MonoBehaviour
                     lockClosed.SetActive(false);
                     button.SetActive(true);
                     lockOpen.SetActive(true);
-                    flagCollider.enabled = false;
                 }
                 break;
         }
