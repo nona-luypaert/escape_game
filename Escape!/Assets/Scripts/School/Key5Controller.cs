@@ -19,9 +19,9 @@ public class Key5Controller : MonoBehaviour
         keyCollider = key.GetComponent<BoxCollider2D>();
         button = GameObject.Find("Button_next");
         button.SetActive(false);
-        lockOpen = GameObject.Find("school_lock_open");
+        lockOpen = GameObject.Find("school_5_lock_open");
         lockOpen.SetActive(false);
-        lockClosed = GameObject.Find("school_lock_closed");
+        lockClosed = GameObject.Find("school_5_lock_closed");
         lockCollider = lockClosed.GetComponent<BoxCollider2D>();
     }
 
