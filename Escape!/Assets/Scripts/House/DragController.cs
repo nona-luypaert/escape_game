@@ -51,7 +51,7 @@ public class DragController : MonoBehaviour
                     break;
             }
         } 
-        if (transform.position.x >= button.transform.position.x - 0.5f)
+        if (transform.position.x >= button.transform.position.x - 0.9f)
         {
             buttonNext.SetActive(true); 
             end = true;
