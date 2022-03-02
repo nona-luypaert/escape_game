@@ -7,7 +7,7 @@ public class PCController : MonoBehaviour
 {
     [SerializeField]
     Text code;
-    string codeString = "";
+    string codeString = "0000";
     private Button button_1;
     private Button button_2;
     private Button button_3;
@@ -18,6 +18,7 @@ public class PCController : MonoBehaviour
     private Button button_8;
     private Button button_9;
     private GameObject next;
+    private bool won, started;
 
     void Start()
     {
@@ -41,6 +42,8 @@ public class PCController : MonoBehaviour
         button_8.enabled = true;
         button_9.enabled = true;
         next.SetActive(false);
+        won = false;
+        started = false;
     }
 
     void Update()
@@ -48,6 +51,7 @@ public class PCController : MonoBehaviour
         code.text = codeString;
         if (codeString == "8531")
         {
+            won = true;
             button_1.enabled = false;
             button_2.enabled = false;
             button_3.enabled = false;
@@ -59,7 +63,7 @@ public class PCController : MonoBehaviour
             button_9.enabled = false;
             next.SetActive(true);
         }
-        if (codeString.Length >= 4)
+        if (codeString.Length >= 4 && !won && started)
         {
             codeString = "";
         }
@@ -67,6 +71,11 @@ public class PCController : MonoBehaviour
 
     public void clickNumber(string number)
     {
+        if (!started)
+        {
+            codeString = "";
+        }
         codeString += number;
+        started = true;
     }
 }
