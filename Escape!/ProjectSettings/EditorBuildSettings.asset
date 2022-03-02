@@ -83,4 +83,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/House/House_5_bath.unity
     guid: cf9d2614a9c429d419852cee029d1890
+  - enabled: 1
+    path: Assets/Scenes/House/House_6.unity
+    guid: 839ee07b9b5a55344b4f13fc6612c38b
+  - enabled: 1
+    path: Assets/Scenes/House/House_6_PC.unity
+    guid: 695059c2a4d44c6469253558afe0e603
   m_configObjects: {}
