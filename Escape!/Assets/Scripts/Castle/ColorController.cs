@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ColorController : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class ColorController : MonoBehaviour
     private GameObject red_button, red_button_solved;
     private bool blue, purple, green, red, yellow;
     private GameObject next, back;
+    private Button button_1, button_2, button_3, button_4, button_5;
 
     void Start()
     {
@@ -39,6 +41,16 @@ public class ColorController : MonoBehaviour
         green = false;
         red = false;
         yellow = false;
+        button_1 = GameObject.Find("Blue").GetComponent<Button>();
+        button_1.enabled = true;
+        button_2 = GameObject.Find("Purple").GetComponent<Button>();
+        button_2.enabled = true;
+        button_3 = GameObject.Find("Green").GetComponent<Button>();
+        button_3.enabled = true;
+        button_4 = GameObject.Find("Red").GetComponent<Button>();
+        button_4.enabled = true;
+        button_5 = GameObject.Find("Yellow").GetComponent<Button>();
+        button_5.enabled = true;
     }
 
     void Update()
@@ -72,6 +84,11 @@ public class ColorController : MonoBehaviour
         {
             next.SetActive(true);
             back.SetActive(false);
+            button_1.enabled = false;
+            button_2.enabled = false;
+            button_3.enabled = false;
+            button_4.enabled = false;
+            button_5.enabled = false;
         }
     }
 
