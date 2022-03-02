@@ -28,11 +28,11 @@ public class StoveController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (click1 == 6)
+        if (click1 == 5)
         {
             button1.enabled = false;
         }
-        if (click2 == 2)
+        if (click2 == 3)
         {
             button2.enabled = false;
         }
@@ -40,12 +40,12 @@ public class StoveController : MonoBehaviour
         {
             button3.enabled = false;
         }
-        if (click4 == 2)
+        if (click4 == 1)
         {
             button4.enabled = false;
         }  
 
-        if (click1 == 6 && click2 == 2 && click3 == 4 && click4 == 2)
+        if (click1 == 5 && click2 == 3 && click3 == 4 && click4 == 1)
         {
             button.SetActive(true);
         }                      
