@@ -7,7 +7,7 @@ public class TVController : MonoBehaviour
 {
     [SerializeField]
     Text code;
-    string codeString = "";
+    string codeString = "0000";
     private GameObject key, found_key, buttonNext;
     private Button buttonBook;
     private Button button_1;
@@ -19,6 +19,7 @@ public class TVController : MonoBehaviour
     private Button button_7;
     private Button button_8;
     private Button button_9;
+    private bool won, started;
 
     void Start()
     {
@@ -44,6 +45,8 @@ public class TVController : MonoBehaviour
         button_7.enabled = true;
         button_8.enabled = true;
         button_9.enabled = true;
+        won = false;
+        started = false;
     }
 
     void Update()
@@ -51,6 +54,7 @@ public class TVController : MonoBehaviour
         code.text = codeString;
         if (codeString == "1542")
         {
+            won = true;
             buttonNext.SetActive(true);
             buttonBook.enabled = false;
             button_1.enabled = false;
@@ -63,7 +67,7 @@ public class TVController : MonoBehaviour
             button_8.enabled = false;
             button_9.enabled = false;
         }
-        if (codeString.Length >= 4)
+        if (codeString.Length >= 4 && !won && started)
         {
             codeString = "";
         }
@@ -71,6 +75,11 @@ public class TVController : MonoBehaviour
 
     public void clickNumber(string number)
     {
+        if (!started)
+        {
+            codeString = "";
+        }
         codeString += number;
+        started = true;
     }
 }
