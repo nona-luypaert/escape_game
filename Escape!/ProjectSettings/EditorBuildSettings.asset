@@ -74,4 +74,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/House/House_3_stove.unity
     guid: 99770b94c553e324c83925761667aa2a
+  - enabled: 1
+    path: Assets/Scenes/House/House_4.unity
+    guid: 08d80a6120778814b8915e6e4b82ea66
   m_configObjects: {}
