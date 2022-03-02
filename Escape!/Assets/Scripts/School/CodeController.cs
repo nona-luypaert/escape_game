@@ -19,6 +19,7 @@ public class CodeController : MonoBehaviour
     private Button button_7;
     private Button button_8;
     private Button button_9;
+    private bool won;
 
     void Start()
     {
@@ -45,6 +46,7 @@ public class CodeController : MonoBehaviour
         button_7.enabled = true;
         button_8.enabled = true;
         button_9.enabled = true;
+        won = false;
     }
 
     void Update()
@@ -52,6 +54,7 @@ public class CodeController : MonoBehaviour
         code.text = codeString;
         if (codeString == "385")
         {
+            won = true;
             key.SetActive(false);
             found_key.SetActive(true);
             button.enabled = true;
@@ -65,7 +68,7 @@ public class CodeController : MonoBehaviour
             button_8.enabled = false;
             button_9.enabled = false;
         }
-        if (codeString.Length >= 3)
+        if (codeString.Length >= 3 && !won)
         {
             codeString = "";
         }
