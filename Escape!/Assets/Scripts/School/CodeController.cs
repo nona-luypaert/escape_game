@@ -7,7 +7,7 @@ public class CodeController : MonoBehaviour
 {
     [SerializeField]
     Text code;
-    string codeString = "";
+    string codeString = "000";
     private GameObject key, found_key;
     private Button button;
     private Button button_1;
@@ -19,7 +19,7 @@ public class CodeController : MonoBehaviour
     private Button button_7;
     private Button button_8;
     private Button button_9;
-    private bool won;
+    private bool won, started;
 
     void Start()
     {
@@ -47,6 +47,7 @@ public class CodeController : MonoBehaviour
         button_8.enabled = true;
         button_9.enabled = true;
         won = false;
+        started = false;
     }
 
     void Update()
@@ -68,7 +69,7 @@ public class CodeController : MonoBehaviour
             button_8.enabled = false;
             button_9.enabled = false;
         }
-        if (codeString.Length >= 3 && !won)
+        if (codeString.Length >= 3 && !won && started)
         {
             codeString = "";
         }
@@ -76,6 +77,11 @@ public class CodeController : MonoBehaviour
 
     public void clickNumber(string number)
     {
+        if (!started)
+        {
+            codeString = "";
+        }
         codeString += number;
+        started = true;
     }
 }
